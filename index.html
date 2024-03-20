@@ -7,33 +7,231 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/landing.css">
 </head>
 <body>
     <header class="header container">
 
         <div>
-            <a class="logo-container" href="#">
-                <img src="img/logo.png" alt="logo">
-                <span class="logo-text" style="text-decoration: none;">ВетМир</span>
+            <a class="logo-container" href="index.html">
+                <img class="logo-img" src="img/header/logo.png" alt="logo">
+                <span class="logo-text">ВетМир</span>
             </a>
         </div>
 
         <nav class="nav">
             <ul>
-                <li>Запись на приём</li>
-                <li>Услуги и тарифы</li>
-                <li>Контакты</li>
-                <li>Ветеринарная аптека</li>
+
+                <li>
+                    <a href="appointment.html">Запись на приём</a>
+                </li>
+
+                <li>
+                    <a href="services.html">Услуги и тарифы</a>
+                </li>
+
+                <li>
+                    <a href="err404.html">Ветеринарная аптека</a>
+                </li>
+                
+                    
+                <li class="dropdown">
+                    <a href="#">О нас</a>
+                    <img class="dropdown-image" src="img/header/dropdown.png">
+                    <ul class="dropdown-menu">
+                        <li><a href="err404.html">Наши сотрудники</a></li>
+                        <li><a href="err404.html">Контакты</a></li>
+                    </ul>
+                </li>
+        
+                <li>
+                    <a href="err404.html">Отзывы</a>
+                </li>
+
             </ul>
         </nav>
     </header>
 
-    <main>
-        <div>
-            <h1>Ветеринарная клиника в Петропавловске</h1>
+    <main class="container">
+        <div class="intro">
+            <div class=intro-text>
+                <h1>Ветеринарная клиника в Петропавловске</h1><br>
+                <span>Заботливое отношение к вам и вашему питомцу</span><br><br>
+                <h2>Более 1000 положительных отзывов</h2><br>
+                <a href="appointment.html" class="intro-button" >Запись на приём</a>
+            </div>
+
+            <div class="intro-img">
+                <img src="img/landing/intro-animals.png" alt="animals">
+            </div>
+
+            <div class="intro-icons">
+                <div>
+                    <img class="intro-icons-image" src="img/landing/clock-icon.png" alt="clock-icon"><br>
+                    <span class="intro-icons-text">Часы работы 09:00 - 18:00</span>
+                </div>
+
+                <div>
+                    <img class="intro-icons-image" src="img/landing/Monitor-icon.png" alt="clock-icon"><br>
+                    <span class="intro-icons-text">Современное оборудование</span>
+                </div>
+
+                <div>
+                    <img class="intro-icons-image" src="img/landing/Cartshop-icon.png" alt="clock-icon"><br>
+                    <span class="intro-icons-text" >Ветеринарная аптека</span>
+                </div>
+            </div>
         </div>
+        <hr>
+        <div class="about">
+            <h1 class="about-title">Ветеринарная клиника ВетМир</h1>
+            <div class="about-content">
+                <img class="about-image" src="img/landing/Left photolanding-about-dog.png">
+                <div class="about-text">
+                    <h2 class="about-text-title"> О нашей клинике</h2><br>
+                    <span>В «ВетМир» ветеринарные врачи постоянно совершенствуют свои знания и  навыки, регулярные специализации и обучения, посещение  сертифицированных  мероприятий по Казахстану, СНГ и дальнего зарубежья.</span><br><br>
+                    <span>Оснащение клиники позволяет проводить множественные исследования.</span><br><br>
+                    <span>К Вашим услугам высококвалифицированные специалисты, современное  оборудование, широкий спектр препаратов, аксессуаров для ваших  животных,лояльные цены.</span><br><br>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="services">
+            <h1 class="services-title">Наши услуги</h1>
+            <div class="services-content">
+
+                <div class="services-content-row-1">
+                    <div class="services-content-item">
+                        <img src="img/landing/services_images/Therapy.png">
+                        <h2>Терапия</h2>
+                        <span>Меры квалифицированной ветеринарной помощи</span>
+                    </div>
+                    <div class="services-content-item">
+                        <img src="img/landing/services_images/Surgery.png">
+                        <h2>Хирургия</h2>
+                        <span>Оперативное лечение заболеваний</span>
+                    </div>
+                    <div class="services-content-item">
+                        <img src="img/landing/services_images/Cardio.png">
+                        <h2>Кардиология</h2>
+                        <span>Квалифицированная ветеринарная кардиология</span>
+                    </div>
+                    <div class="services-content-item">
+                        <img src="img/landing/services_images/Odontology.png">
+                        <h2>Стоматология</h2>
+                        <span>Диагнотика и лечение зубов ваших питомцев</span>
+                    </div>
+                </div>
+
+                <div class="services-content-row-2">
+                    <div class="services-content-item">
+                        <img src="img/landing/services_images/Microscope.png">
+                        <h2>Лаборатория</h2>
+                        <span>Современное лабораторное оборудование</span>
+                    </div>
+                    <div class="services-content-item">
+                        <img src="img/landing/services_images/Eye.png">
+                        <h2>Офтальмология</h2>
+                        <span>Диагностика и лечение глазных заболеваний и патологий вспомогательного аппарата глаза</span>
+                    </div>
+                    <div class="services-content-item">
+                        <img src="img/landing/services_images/Hazard.png">
+                        <h2>Онкология</h2>
+                        <span>Квалифицированная ветеринарная помощь онкологического направления</span>
+                    </div>
+                    <div class="services-content-item">
+                        <img src="img/landing/services_images/Virus.png">
+                        <h2>Вирусология</h2>
+                        <span>Профилактика инфекционных заболеваний путем плановой вакцинации</span>
+                    </div>
+                </div>
+                <a class="services-button" href="services.html">Узнать цены</a>
+            </div>
+        </div>
+        <hr>
+        <div class="our-team">
+            <h1 class="our-team-title">
+                Наша команда
+            </h1>
+            <div class="our-team-content">
+                <div class="our-team-text">
+                    <div class="our-team-text-item">
+                        <img class="our-team-icon" src="img/our_team/Group Discussion.png" alt="Group">
+                        <span>Наши специалисты принимают участие в международных конференциях</span>
+                    </div>
+
+                    <div class="our-team-text-item">
+                        <img class="our-team-icon" src="img/our_team/Certificate.png" alt="Certificate">
+                        <span>Каждые 5 лет  наш персонал повышает квалификацию и получают сертификаты.</span>
+                    </div>
+
+                    <div class="our-team-text-item">
+                      
+                        <img class="our-team-icon" src="img/our_team/Scientific work.png" alt="Scientific">
+                        
+                        <span>Консультации и поддержка до, во время лечения и после него, рекомендации по уходу, содержанию, кормлению.</span>
+                    </div>
+                </div>
+                
+                <img class="our-team-jpg" src="img/our_team/Right photodoctor.png">
+            </div>
+        </div>
+        <hr>
     </main>
 
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="footer-column">
+                <h2 class="footer-title">Меню</h2>
+                <div class="footer-menu">
+                    <div class="footer-menu-column">
+                        <a href="appointment.html">Запись на приём</a>
+                        <a href="index.html">Главная</a>
+                        <a href="err404.html">Отзывы</a>
+                    </div>
+                    <div class="footer-menu-column">
+                        <a href="err404.html">Ветеринарная аптека</a>
+                        <a href="services.html">Услуги и тарифы</a>
+                        <a href="err404.html">Наши сотрудники</a>
+                    </div>
+                </div>
+                <span class="footer-info">© ВетМир, 2023–2024</span>
+            </div>
+
+            <div class="footer-column">
+                <h2 class="footer-title">Где мы находимся</h2>
+                <div class="footer-address">
+                    <span>Улица Жамбыла Жабаева 156</span>
+                    <img class="footer-location-img" src="img/footer/location.png" alt="map">
+                </div>
+            </div>
+            
+
+            <div class="footer-column">
+                <div class="contacts"></div>
+                    <h2 class="footer-title">Социальные сети</h2>
+                    <div class="social-networks">
+                        <a href="https://web.whatsapp.com/">
+                            <img src="img/footer/Whats App.png" alt="whatsapp">
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src="img/footer/Social Icons.png" alt="instagram">
+                        </a>
+                        <a href="https://telegram.org">
+                            <img src="img/footer/Social Iconstelegram.png" alt="telegram">
+                        </a>
+                    </div>
+                    <h2 class="footer-title">Контакты</h2>
+                    <div class="numbers">
+                        <span>+ 7 777 123 56 78</span>
+                        <span>+ 7 777 987 65 43</span>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

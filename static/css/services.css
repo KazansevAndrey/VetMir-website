@@ -1,0 +1,88 @@
+
+.services{
+    padding-bottom: 6%;
+}
+
+.services-title{
+    font-size: 48px;
+    color: #021E20;
+    font-weight: 800;
+    margin-bottom: 5%;
+}
+
+.services-text{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.services-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -9%;
+}
+
+
+
+.services-block{
+    margin-bottom:3%; 
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    
+    
+}
+
+
+.services-title-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Разрешает перенос элементов на новую строку */
+    column-gap:2%;
+    
+}
+
+.services-content-row{
+    display: flex;
+    flex-wrap: wrap; /* Разрешает перенос элементов на новую строку */
+
+    column-gap:2%;
+    margin-bottom:3%;
+}
+
+.services-item-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2A7096;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    font-size: 29px;
+    font-weight: 700;
+    flex:1;
+    padding:2%;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.services-item-content{
+    display: flex;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    flex:1;
+    padding:2%;
+    flex-wrap:wrap;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+
+}
+.services-item-content:hover {
+    background-color: #F8F8FF; /* Изменение цвета при наведении */
+    transform: scale(1.01); 
+  }
+
