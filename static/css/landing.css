@@ -7,7 +7,7 @@
 
 .intro{
     justify-content: space-between;
-    padding-bottom:3%;
+    padding-bottom:5%;
 }
 
 .intro-text{
@@ -35,6 +35,10 @@
     margin-bottom:3%;
 }
 
+.intro-buttons{
+    display: flex;
+}
+
 .intro-button{
     padding: 18px 27px;
     text-decoration: none;
@@ -45,6 +49,9 @@
     font-size: 20px;
     font-weight: 600;
     transition: transform 0.3s ease; /* Плавная анимация трансформации */
+    margin-right:30px;
+    width: 35%;
+    text-align: center;
 }
 
 .intro-button:hover{
@@ -64,7 +71,8 @@
 .intro-icons{
     display: flex;
     align-items: center;
-    margin-top: 1%;
+    justify-content: center;
+    margin-top: 3%;
 }
 
 .intro-icons div{
@@ -87,7 +95,6 @@
 
 .about{
     padding-top: 3%;
-    padding-bottom: 3% ;
 }
 
 .about-title{
@@ -98,7 +105,7 @@
 
 .about-content{
     display: flex;
-    padding-top: 5%;
+    padding-top: 4%;
     padding-bottom: 3%;
 }
 
@@ -126,7 +133,7 @@
 }
 
 .services{
-    padding-top: 3%;
+    padding-top: 5%;
     padding-bottom: 3% ;
     overflow-x: hidden;
 }
@@ -135,12 +142,12 @@
     font-size: 48px;
     font-weight: 800;
     color: #021E20;
-    padding-bottom: 3%;
+    padding-bottom: 4%;
 }
 
 .services-content{
     display: block;
-    margin-bottom:2%;
+    
     
 }
 
@@ -226,7 +233,7 @@
 
 .our-team{
     padding-top: 3%;
-    padding-bottom: 5%;
+    padding-bottom: 7%;
 
 }
 
@@ -237,7 +244,7 @@
 }
 
 .our-team-content{
-    margin-top: 3%;
+    margin-top: 4%;
     display: flex;
 }
 

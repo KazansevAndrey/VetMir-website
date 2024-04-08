@@ -144,7 +144,8 @@ hr{
     display: block;
     width: 100%;
     background-color: #D9D9D9;
-    height: 350px;
+    height: 380px;
+    
 }
 .footer-content{
     display: flex;
@@ -155,6 +156,7 @@ hr{
     width: 100%;
     background-color: #D9D9D9;
     background-size: cover;
+    height: 330px;
     
 }
 .footer-column{

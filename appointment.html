@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="static/css/appointment.css">
 </head>
 <body>
+
     <header class="header container">
 
         <div>
@@ -58,29 +59,54 @@
             <div class="form-container">
                 <h2 class="form-title">Заполните форму и мы обязательно с вами свяжемся</h2>
                 <div class="form">
-                    <form>
+                    <form id="user-form">
                         <div class="form-group">
                             <label class="text-field__label" for="name">Ваше имя:</label>
-                            <input placeholder="Ввведите ваше имя" type="text" id="name" name="name" required>
+                            <input id = "username" name="name" type = "text" placeholder="Ввведите ваше имя" type="text" id="name" name="name">
+                            <div class="error"></div>
                         </div>
                         <div class="form-group">
-                            <label class="text-field__label" for="phone">Номер телефона:</label>
-                            <input placeholder="+7 (---) --- ----" type="text" id="phone" name="phone" required>
+                            <label name="phone" class="text-field__label" for="phone">Номер телефона:</label>
+                            <input placeholder="+7 (---) --- ----" type="text" id="phone" name="phone" >
+                            <div class="error"></div>
                         </div>
                         <div class="form-group">
-                            <label class="text-field__label" for="pet">Ваш питомец</label>
-                            <input placeholder="Кот, собака, попугай"type="text" id="pet" name="pet" required>
+                            <label for="product">Ваш питомец:</label>
+                            <select class="custom-select" id="animal" name="animals" >
+                                <option value="">Ваш питомец</option>
+                                <option value="Кот">Кот</option>
+                                <option value="Собака">Собака</option>
+                                <option value="Морская свинка">Морская свинка</option>
+                                <option value="Кролик">Кролик</option>
+                                <option value="Енот">Енот</option>
+                            </select>
+                            <div class="error"></div>
                         </div>
                         <div class="form-group">
-                            <label for="issue">Что случилось с вашим питомцем:</label>
-                            <textarea placeholder="Что случилось с вашим питомцем" id="issue" name="issue" required></textarea>
+                            <label name="description" for="issue">Что случилось с вашим питомцем:</label>
+                            <textarea placeholder="Что случилось с вашим питомцем" id="issue" name="issue" ></textarea>
+                            <div class="error"></div>
                         </div>
-                        <input class= appoinment-submit-btn type="submit" value="Отправить">
+                        <div class="appoinment-buttons">
+                            <input class= "appoinment-submit-btn" type="submit" value="Отправить">
+                            <input id = "info-button" class= "appoinment-submit-btn" type="button" value="Текущая заявка">
+                        </div>
                     </form>
+                    <div id="current-data" style="display: none;"></div>
+                    <div id="popup-container" class="popup-container">
+                        <div id="popup-content" class="popup-content">
+                            <span style="display: block; text-align: center; padding-bottom: 10px;">Текущая заявка</span>
+                            <div id="popup-current-data"></div>
+                        </div>
+                        <button id="close-popup" class="close-popup-btn">Закрыть</button>
+                    </div>
+                    
                 </div>
             </div>
         </div>
+        <div id="messageContainer"></div>
         <hr>
+        <script src="static/scripts/form.js"></script>
     </main>
     <hr>
     <footer class="footer">

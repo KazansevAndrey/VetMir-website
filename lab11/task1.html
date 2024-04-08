@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача1</title>
+</head>
+<body>
+    <script>
+        var a = prompt ('Введите длину первого катета');
+        var b = prompt ('Введите длину второго катета');
+        if (!isNaN(a && b) && (a > 0 && b > 0) ){
+            a = parseInt (a);
+            b = parseInt (b);
+            var square = a*b/2
+            var hypotenuse = Math.sqrt(a**2+b**2)
+            alert ("Площадь прямоугольного треугольника:"+square)
+            alert ("гипотенуза:"+hypotenuse)
+        }
+        else {
+            alert ("Пожалуйста, введите целые положительные числа при следующем запуске программы.")
+        }
+    </script>
+    <p style="text-align: center;" onclick="location.reload(true);">
+        Ещё раз!
+    </p>
+</body>
+</html>
