@@ -96,18 +96,26 @@ document.addEventListener("DOMContentLoaded", function() {
         }}
 
 
-    const infoButton = document.getElementById("info-button");
+    
     const popupContainer = document.getElementById("popup-container");
     const closePopupButton = document.getElementById("close-popup");
+    const overlay = document.getElementById("overlay")
     
     closePopupButton.addEventListener("click", () => {
-        popupContainer.style.display = "none"})
+        popupContainer.style.display = "none";
+        overlay.style.display = "none";
+        document.body.style.overflowY = "";
+    })
+
 
     //Отображаем заявку во всплывающем окне
     const get_current_request = () =>{
             
         popupContainer.style.display = "flex";
         popupContainer.style.flexDirection = "column";
+        overlay.style.display = "block";
+        overlay.style.position = "fixed";
+        document.body.style.overflowY = "hidden";
         const current_data = document.getElementById("current-data").innerText;
         if (current_data === ""){
             document.getElementById("popup-current-data").innerText = "Нет текущей заявки. Что бы мы могли с вами связаться заполните форму и отправьте нам. Мы свяжемся с вами в ближайшее время.";
@@ -119,9 +127,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         for (const key in jsonObject) {
 
-            displayText += `${key}:   ${jsonObject[key]}\n`;      
+            displayText += `${key}: ${jsonObject[key]}\n`;      
         }
 
+        document.getElementById("popup-container").style.width = "25%";
         document.getElementById("popup-current-data").innerText = displayText;
 
         }

@@ -3,26 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Задача1</title>
+    <title>Калькулятор прямоугольного треугольника</title>
 </head>
 <body>
-    <script>
-        var a = prompt ('Введите длину первого катета');
-        var b = prompt ('Введите длину второго катета');
-        if (!isNaN(a && b) && (a > 0 && b > 0) ){
-            a = parseInt (a);
-            b = parseInt (b);
-            var square = a*b/2
-            var hypotenuse = Math.sqrt(a**2+b**2)
-            alert ("Площадь прямоугольного треугольника:"+square)
-            alert ("гипотенуза:"+hypotenuse)
+
+<div style="text-align: center;">
+    <h1>Задача №1</h1>
+    <h2>Калькулятор прямоугольного треугольника</h2>
+    <label style="font-size: 20px;" for="inputA">Введите длину первого катета:</label>
+    <input type="number" id="inputA">
+    <br>
+    <label style="font-size: 20px;" for="inputB">Введите длину второго катета:</label>
+    <input type="number" id="inputB">
+    <br>
+    <button style="margin-top: 3%;" onclick="calculate()">Рассчитать</button>
+    <br>
+    <div style="font-size: 20px;" id="result"></div>
+</div>
+
+<script>
+    function calculate() {
+        var a = document.getElementById('inputA').value;
+        var b = document.getElementById('inputB').value;
+
+        if (!isNaN(a) && !isNaN(b) && (a > 0 && b > 0)) {
+            a = parseInt(a);
+            b = parseInt(b);
+            var square = a * b / 2;
+            var hypotenuse = Math.sqrt(a ** 2 + b ** 2);
+            document.getElementById('result').innerHTML = "<p>Площадь прямоугольного треугольника: " + square + "</p><p>Гипотенуза: " + hypotenuse + "</p>";
+        } else {
+            document.getElementById('result').innerHTML = "<p>Пожалуйста, введите целые положительные числа.</p>";
         }
-        else {
-            alert ("Пожалуйста, введите целые положительные числа при следующем запуске программы.")
-        }
-    </script>
-    <p style="text-align: center;" onclick="location.reload(true);">
-        Ещё раз!
-    </p>
+    }
+</script>
+
 </body>
 </html>
