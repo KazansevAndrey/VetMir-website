@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
             setError(phone, 'Введите ваш номер телефона');
             isValid = false;
         } else if (!is_valid_phone(phoneValue)) {
-            setError(phone, 'Введите корректный номер телефона в формате +X XXX XXX XXXX');
+            setError(phone, 'Введите корректный номер телефона в формате +7 XXX XXX XXXX');
             isValid = false;
         } else {
             setSuccess(phone);
