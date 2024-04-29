@@ -1,3 +1,4 @@
+
 *{
     font-family: 'Open Sans';
     font-weight: normal;
@@ -17,9 +18,10 @@
 }
 
 .footer a{
+    font-weight: 500;
     text-decoration: none;
-    font-size: 17px;
-    font-weight: 600;
+    font-size: 16px;
+    
     background-color: #D9D9D9;
 }
 
@@ -37,6 +39,8 @@ hr{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 /* Шапка */
@@ -45,15 +49,77 @@ hr{
     color: #000;
     justify-content: space-between;
     align-items: center;
-    height: 125px;
-    padding-bottom: 3%;
+    height: 110px;
+    margin-bottom: 3%;
     
 }
 
-.nav ul li {
+.menu ul{
+    margin-left: 30px;
+}
+
+    
+
+
+menu li {
     display: inline-block;
     list-style: none;
     margin-right: 36px;
+    display: inline-block;
+    list-style: none;  
+    padding-top: 10px;
+    justify-content: center;
+    direction: rtl;
+    
+}
+
+menu li li a{
+    direction: rtl;
+    
+}
+
+
+ 
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+ 
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.burger-menu-btn{
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border:none;
+    background-color: #2A7096;
+    
+    
+}
+
+.burger-menu-btn span{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    left:5px;
+    
+}
+
+.burger-menu-btn span:nth-child(1){
+    transform: translateY(-10px);
+    
+}
+
+.burger-menu-btn span:nth-child(2){
+    transform: translateY(10px);
     
 }
 
@@ -62,6 +128,7 @@ hr{
     display: inline-flex;
     align-items: center;
     text-decoration: none;
+    margin-right: 20px;
 }
 
 .logo-text{
@@ -144,7 +211,7 @@ hr{
     display: block;
     width: 100%;
     background-color: #D9D9D9;
-    height: 380px;
+    height: auto;
     
 }
 .footer-content{
@@ -152,7 +219,7 @@ hr{
     color: #021E20;
     justify-content: space-between;
     padding-top: 1%;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
     width: 100%;
     background-color: #D9D9D9;
     background-size: cover;
@@ -161,6 +228,7 @@ hr{
 }
 .footer-column{
     display: flex;
+    font-family: "PT Sans","Helvetica","Arial",sans-serif;
     flex-direction: column;
     flex-grow: 1;
     flex-basis: 0;
@@ -168,7 +236,7 @@ hr{
 
 }
 .footer-title{
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 5%;
@@ -191,11 +259,12 @@ hr{
 }
 
 .footer-info{
-    
-    margin-top: auto;
-    font-weight: 600;
-    font-size:17px;
+    font-family: "PT Sans","Helvetica","Arial",sans-serif;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size:16px;
     background-color: #D9D9D9;
+    white-space: nowrap; 
 }
 
 
@@ -206,14 +275,16 @@ hr{
     flex-direction: column;
     text-align: center;
     background-color: #D9D9D9;
+    align-items: center;
 }
 
 .footer-address img{
     margin-top: 3%;
+    max-width: 80%;
 }
 
 .footer-address span{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     background-color: #D9D9D9;
 }
@@ -238,6 +309,9 @@ hr{
     margin-bottom:10%;
     background-color: #D9D9D9;
 }
+.social-networks img{
+    max-width: 90%;
+}
 
 .numbers{
     display: flex;
@@ -249,9 +323,39 @@ hr{
 .numbers span{
     text-align: center;
     margin-bottom:3%;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     background-color: #D9D9D9;
+    font-weight: 500;
 }
 
 
+
+
+
+@media (max-width: 1200px){
+    
+    
+    
+
+}
+
+@media (max-width: 992px){
+    .burger-menu-btn{
+        display: block;
+    }
+
+}
+
+@media (min-width: 768px){
+    
+}
+
+@media (min-width: 480px){
+    
+}
+
+
+@media (min-width: 320px){
+    
+}
