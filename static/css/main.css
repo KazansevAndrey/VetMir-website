@@ -54,14 +54,9 @@ hr{
     
 }
 
-.menu ul{
-    margin-left: 30px;
-}
-
-    
 
 
-menu li {
+ul li {
     display: inline-block;
     list-style: none;
     margin-right: 36px;
@@ -78,7 +73,10 @@ menu li li a{
     
 }
 
-
+.nav{
+    display: flex;
+    margin-left: 30px;
+}
  
 .nav-links {
     list-style: none;
@@ -152,7 +150,7 @@ menu li li a{
   }
 
 .dropdown-image {
-    width: 15px; /* Установите желаемую ширину иконки */
+    width: 15px; 
     vertical-align: middle; /* Выравниваем иконку по вертикали */
     margin: 0;
 }
@@ -163,8 +161,9 @@ menu li li a{
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    padding:5px;
+    padding:2px;
     margin-top:10px;
+    justify-content: center;
     
   }
 /* Отступ для выпадающего меню*/
@@ -188,13 +187,13 @@ menu li li a{
     display: block;
     background-color: #E4E5EA;
     padding:5px;
-    padding-right: 30px;
-    margin-bottom: 8%;
-    border-radius: 5px;
+    padding-right: 10px;
+    margin-bottom: 2%;
+    border-radius: 3px;
     width: auto;
     border: 1px solid #555;
     transition: all .3s ease;
-
+    
 
   }
   
@@ -345,6 +344,26 @@ menu li li a{
         display: block;
     }
 
+    .nav ul{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        top: 0;
+        background-color: #2A7096;
+    }
+    
+      .dropdown-menu a{
+        
+        text-decoration: none;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        z-index: 1;
+        padding:0;
+        margin-top:3px;
+        
+      }
 }
 
 @media (min-width: 768px){
