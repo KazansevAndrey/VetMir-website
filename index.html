@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="static/css/landing.css">
 </head>
 <body>
-    <header class="header container">
+    <header id="header" class="header container">
 
         <div>
-            <button class="burger-menu-btn">
+            <button class="burger-menu-btn" onclick="open_menu()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -203,14 +203,14 @@
 
     <footer class="footer">
         <div class="footer-content container">
-            <div class="footer-column">
+            <div id = "footer-column-1" class="footer-column">
                 <h2 class="footer-title">Меню</h2>
                 <div class="footer-menu">
                     <div class="footer-menu-column">
                         <a href="appointment.html">Запись на приём</a>
                         <a href="index.html">Главная</a>
                         <a href="err404.html">Отзывы</a>
-                        <span class="footer-info">© ВетМир, 2023–2024</span>
+                        
                     </div>
                     <div class="footer-menu-column">
                         <a href="err404.html">Ветеринарная аптека</a>
@@ -221,7 +221,7 @@
                 
             </div>
 
-            <div class="footer-column">
+            <div id = "footer-column-2" class="footer-column">
                 <h2 class="footer-title">Где мы находимся</h2>
                 <div class="footer-address">
                     <span>Улица Жамбыла Жабаева 156</span>
@@ -230,29 +230,37 @@
             </div>
             
 
-            <div class="footer-column">
-                <div class="contacts"></div>
-                    <h2 class="footer-title">Социальные сети</h2>
-                    <div class="social-networks">
-                        <a href="https://web.whatsapp.com/">
-                            <img src="img/footer/Whats App.png" alt="whatsapp">
-                        </a>
-                        <a href="https://www.instagram.com/">
-                            <img src="img/footer/Social Icons.png" alt="instagram">
-                        </a>
-                        <a href="https://telegram.org">
-                            <img src="img/footer/Social Iconstelegram.png" alt="telegram">
-                        </a>
+            <div id = "footer-column-3" class="footer-column">
+                <div class="contacts">
+                    <div>
+                        <h2 class="footer-title">Социальные сети</h2>
+                        <div class="social-networks">
+                            <a href="https://web.whatsapp.com/">
+                                <img src="img/footer/Whats App.png" alt="whatsapp">
+                            </a>
+                            <a href="https://www.instagram.com/">
+                                <img src="img/footer/Social Icons.png" alt="instagram">
+                            </a>
+                            <a href="https://telegram.org">
+                                <img src="img/footer/Social Iconstelegram.png" alt="telegram">
+                            </a>
+                        </div>
                     </div>
-                    <h2 class="footer-title">Контакты</h2>
-                    <div class="numbers">
-                        <span>+ 7 777 123 56 78</span>
-                        <span>+ 7 777 987 65 43</span>
+                
+                    <div>
+                        <h2 class="footer-title">Контакты</h2>
+                        <div class="numbers">
+                            <span>+ 7 777 123 56 78</span>
+                            <span>+ 7 777 987 65 43</span>
+                        </div>
                     </div>
 
                     
                 </div>
+                
             </div>
+            <span class="footer-info">© ВетМир, 2023–2024</span>
+            
         </div>
     </footer>
     <script src="static/scripts/script.js"></script>

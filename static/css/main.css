@@ -97,11 +97,13 @@ menu li li a{
 
 .burger-menu-btn{
     display: none;
-    position: relative;
+    position: fixed;
     width: 40px;
     height: 40px;
     border:none;
-    background-color: #2A7096;
+    background-color: transparent;
+    
+    
    
     
     
@@ -111,8 +113,9 @@ menu li li a{
     position: absolute;
     width: 30px;
     height: 3px;
-    background-color: #fff;
+    background-color: #000;
     left:5px;
+    transition: transform.5s, opacity.5s, background-color.5s ;
     
 }
 
@@ -121,11 +124,25 @@ menu li li a{
     
 }
 
-.burger-menu-btn span:nth-child(2){
+.burger-menu-btn span:nth-child(3){
     transform: translateY(10px);
     
 }
 
+header.open .burger-menu-btn span:nth-child(1){
+    transform: translateY(0) rotate(45deg);}
+
+    
+header.open .burger-menu-btn span:nth-child(2){
+    opacity: 0;}
+
+    
+header.open .burger-menu-btn span:nth-child(3){
+    transform: translateY(0) rotate(-45deg);}
+
+header.open .burger-menu-btn span{
+    background-color: white;
+}
 /*Контейнер для текста и логитипа*/
 .logo-container{
     display: inline-flex;
@@ -212,6 +229,7 @@ menu li li a{
     
 }
 .footer{
+    
     display: block;
     width: 100%;
     background-color: #D9D9D9;
@@ -222,8 +240,9 @@ menu li li a{
     display: flex;
     color: #021E20;
     justify-content: space-between;
-    padding-top: 1%;
-    padding-bottom: 2%;
+    
+    padding: 0;
+
     width: 100%;
     background-color: #D9D9D9;
     background-size: cover;
@@ -232,6 +251,9 @@ menu li li a{
 }
 .footer-column{
     display: flex;
+    padding: 10px;
+    padding-top: 1%;
+    padding-bottom: 2%;
     font-family: "PT Sans","Helvetica","Arial",sans-serif;
     flex-direction: column;
     flex-grow: 1;
@@ -267,6 +289,7 @@ menu li li a{
     margin-top: 30px;
     font-weight: 500;
     font-size:16px;
+    margin-top: 50px;
     background-color: #D9D9D9;
     white-space: nowrap; 
 }
@@ -347,8 +370,10 @@ menu li li a{
 @media (max-width: 992px){
     .burger-menu-btn{
         display: block;
-        z-index: 2;
-        ;
+        z-index: 2000;
+        margin-bottom: 50px;
+        top: 35px;
+        position: relative;
     }
 
     .nav-desktop {
@@ -357,12 +382,14 @@ menu li li a{
     
     .nav-mobile {
         display: block; /* Отображаем мобильное меню на мобильных устройствах */
-        position: absolute;
+        position: fixed;
         left: 0;
         top:0;
         background-color: #2A7096;
         width: 309px;
         left: -309px;
+        transition: transform.5s;
+        z-index: 1000;
         
       }
 
@@ -370,7 +397,7 @@ menu li li a{
         display: flex;
         flex-direction: column;
         background-color: #2A7096;
-        padding: 90px 20px 20px 20px ;
+        padding: 100px 20px 20px 20px ;
         
       }
       .nav-mobile-list li, .nav-mobile-list li a {
@@ -380,15 +407,53 @@ menu li li a{
         font-size: 20px;
         padding: 5px;
         width: 100%;
-        border: 3px;
+        border: 3px;}
         
-      };
+        .header.open .nav-mobile{
+            transform: translateX(100%);
+        }
+        .header.open .burger-menu-btn{
+            position: fixed;
+        }
+    
      
 }
 
-@media (min-width: 768px){
+@media (max-width: 768px){
+    .footer-content {
+        flex-wrap: wrap; 
+    }
+
+    .footer-menu {
+        justify-content: center;
+        text-align: center;
+        
+    }
+    #footer-column-1, #footer-column-2 {
+        flex: 1 1 100%; /* Каждый столбец занимает всю доступную ширину на мобильных устройствах */
+        
+    }
     
-}
+
+    .footer-info{
+        text-align: center;
+        box-sizing: border-box;}
+
+    .contacts{
+        display: flex;}
+        
+    .contacts div{
+
+        flex: 1;
+    }  
+    }
+        
+        
+    
+    
+        
+    
+
 
 @media (min-width: 480px){
     
