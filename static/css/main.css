@@ -73,22 +73,26 @@ menu li li a{
     
 }
 
-.nav{
+.nav-desktop{
     display: flex;
     margin-left: 30px;
 }
  
-.nav-links {
+.nav-desktop-links {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
  
-.nav-links li a {
+.nav-desktop-links li a {
     color: white;
     text-decoration: none;
     padding: 1rem;
+}
+
+.nav-mobile {
+    display: none;
 }
 
 .burger-menu-btn{
@@ -98,6 +102,7 @@ menu li li a{
     height: 40px;
     border:none;
     background-color: #2A7096;
+   
     
     
 }
@@ -187,7 +192,7 @@ menu li li a{
     display: block;
     background-color: #E4E5EA;
     padding:5px;
-    padding-right: 10px;
+    
     margin-bottom: 2%;
     border-radius: 3px;
     width: auto;
@@ -342,28 +347,43 @@ menu li li a{
 @media (max-width: 992px){
     .burger-menu-btn{
         display: block;
+        z-index: 2;
+        ;
     }
 
-    .nav ul{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        left: 0;
-        top: 0;
-        background-color: #2A7096;
+    .nav-desktop {
+        display: none; /* Скрываем десктопное меню на мобильных устройствах */
     }
     
-      .dropdown-menu a{
-        
-        text-decoration: none;
-        padding: 0;
-        border: none;
-        box-shadow: none;
-        z-index: 1;
-        padding:0;
-        margin-top:3px;
+    .nav-mobile {
+        display: block; /* Отображаем мобильное меню на мобильных устройствах */
+        position: absolute;
+        left: 0;
+        top:0;
+        background-color: #2A7096;
+        width: 309px;
+        left: -309px;
         
       }
+
+      .nav-mobile-list{
+        display: flex;
+        flex-direction: column;
+        background-color: #2A7096;
+        padding: 90px 20px 20px 20px ;
+        
+      }
+      .nav-mobile-list li, .nav-mobile-list li a {
+        display: inline-block;
+        background-color: #2A7096;
+        color:#fff;
+        font-size: 20px;
+        padding: 5px;
+        width: 100%;
+        border: 3px;
+        
+      };
+     
 }
 
 @media (min-width: 768px){
