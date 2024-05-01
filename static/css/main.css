@@ -94,7 +94,7 @@ menu li li a{
 
 .nav-mobile {
     display: none;
-}
+    z-index: 999999999999;}
 
 .burger-menu-btn{
     display: none;
@@ -103,10 +103,9 @@ menu li li a{
     height: 40px;
     border:none;
     background-color: transparent;
-    
-    
-   
-    
+    justify-content: center;
+    z-index: 999999999999;
+     
     
 }
 
@@ -381,7 +380,6 @@ header.open .burger-menu-btn span{
 @media (max-width: 992px){
     .burger-menu-btn{
         display: block;
-        z-index: 2000;
         margin-bottom: 50px;
         top: 35px;
         position: relative;
@@ -467,7 +465,7 @@ header.open .burger-menu-btn span{
         
         text-align: center;
         background-color: #D9D9D9;
-        align-items: center;}
+        }
     
     .footer-menu a{
         padding: 10px;
@@ -504,15 +502,21 @@ header.open .burger-menu-btn span{
     
     
         
-        
     
-    
-        
-    
-
-
-@media (min-width: 480px){
-    
+@media (max-width: 480px){
+    .footer-column {
+        flex-wrap: wrap;
+        flex: 1 1 100%; /* Каждый столбец занимает всю доступную ширину на мобильных устройствах */
+    }
+    .contacts{
+        flex: 1 1 100%;
+    }
+    #footer-column-3 div{
+        flex: 1 1 100%;
+    }
+    .logo-text{
+        display: none;
+    }
 }
 
 
