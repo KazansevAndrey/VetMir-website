@@ -174,6 +174,7 @@
     font-weight: 800;
     color: #021E20;
     padding-bottom: 4%;
+    margin: 3%;
 }
 
 .services-content{
@@ -262,7 +263,7 @@
 
 
 .our-team{
-    padding-top: 3%;
+    padding-top: 5%;
     padding-bottom: 7%;
 
 }
@@ -294,9 +295,11 @@
 
 .our-team-text span{
     color: #021E20;
-    font-size: 1.125rem;
+    font-size: 1.7rem;
     font-weight: 500;
+    
 }
+
 
 .our-team-icon{
     height: 3.625rem;
@@ -342,13 +345,13 @@
     }
 
     .intro-img{
-        max-width: 60vw;
+        max-width: 80vw;
     }
 
 
     .intro-img img {
         
-        max-width: 60vw ;
+        max-width: 80vw ;
         height: auto;
         justify-content: center;
         margin-top: 20px;
@@ -384,9 +387,13 @@
 
     .about-text-title{
         font-size: 2.5rem;
+        margin:0.2em;
+        
+        box-sizing: border-box;
     }
     .about-text{
-        width: 80%;
+        width: 100%;
+        padding: 1em;
     }
     .about-text span{
         box-sizing: border-box;
@@ -403,6 +410,7 @@
     .our-team-content{
         flex-direction: column;
         align-items: center;
+        
 
     }
     .our-team-text{
@@ -415,7 +423,7 @@
     }
     .our-team-jpg{
         width: 60vw;
-        margin-top: 2%;
+        margin-top: 5%;
     }
 }
 
@@ -454,7 +462,7 @@
     .services-button{
         margin:0;
         max-width: 25rem;
-        padding: 1em 2.8em;
+        padding: 1rem;
         font-size: 1.25rem;
         
     }
