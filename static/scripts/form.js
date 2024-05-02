@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function() {
             displayText += `${key}: ${jsonObject[key]}\n`;      
         }
 
-        document.getElementById("popup-container").style.width = "25%";
+
         document.getElementById("popup-current-data").innerText = displayText;
 
         }

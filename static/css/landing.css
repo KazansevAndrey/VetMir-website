@@ -55,7 +55,7 @@
     background-color: #075985;
     border-radius: 15px;
     color: #fff;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 600;
     transition: transform 0.3s ease; /* Плавная анимация трансформации */
     margin-right:30px;
@@ -242,7 +242,7 @@
 }
 
 .services-button{
-    padding: 16px 50px;
+    padding: 1.3rem;
     margin-top:3%;
     margin-left: 1.5rem;
     background-color: #075985 ;
@@ -341,7 +341,7 @@
 
     .intro-button{
         margin: 0;
-        padding: 1rem;
+        padding: 1.3rem;
     }
 
     .intro-img{
@@ -436,7 +436,7 @@
         flex-direction: column;
     }
     .intro-button{
-        padding: 1.5rem;
+    
         width: 50vw;
         margin:1rem;
         font-size: 1.5rem;
