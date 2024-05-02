@@ -142,6 +142,7 @@ input::placeholder, textarea::placeholder{
 }
 
 .popup-container {
+    background-color: #fff;
     position: fixed;
     display:none;
     top: 50%;
@@ -161,6 +162,7 @@ input::placeholder, textarea::placeholder{
 }
 
 .popup-content {
+    background-color: #fff;
     justify-content: center;
     display: block;
 
