@@ -238,7 +238,9 @@ input::placeholder, textarea::placeholder{
         font-size: 14px;
     }
      
-    
+    .form-title{
+        text-align: left;
+    }
     .appoinment-buttons{
         flex-direction: column;
         gap: 0.5rem;
@@ -262,6 +264,7 @@ input::placeholder, textarea::placeholder{
     .close-popup-btn{
         font-size: 1.3rem;
     }
+
     
 }
 

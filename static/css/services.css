@@ -5,6 +5,8 @@
     font-size: 3rem;
     color: #021E20;
     font-weight: 800;
+    margin-bottom:1em;
+    
     
 }
 
@@ -108,6 +110,8 @@
     .services-block-2{
         gap:0;
     }
+    .services-title{
+    text-align: center;}
 
 }
 @media (max-width: 480px) {
