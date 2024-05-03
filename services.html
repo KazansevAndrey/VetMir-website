@@ -11,8 +11,16 @@
         <link rel="stylesheet" href="static/css/services.css">
     </head>
     <body>
-        <header class="header container">
+        <header id="header" class="header container">
 
+            <div>
+                <button class="burger-menu-btn" onclick="open_menu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+    
             <div>
                 <a class="logo-container" href="index.html">
                     <img class="logo-img" src="img/header/logo.png" alt="logo">
@@ -20,7 +28,7 @@
                 </a>
             </div>
     
-            <nav class="nav">
+            <nav class="nav-desktop">
                 <ul>
     
                     <li>
@@ -35,24 +43,37 @@
                         <a href="err404.html">Ветеринарная аптека</a>
                     </li>
                     
-                        
-                    <li class="dropdown">
-                        <a href="#">О нас</a>
-                        <img class="dropdown-image" src="img/header/dropdown.png">
-                        <ul class="dropdown-menu">
-                            <li><a href="err404.html">Наши сотрудники</a></li>
-                            <li><a href="err404.html">Контакты</a></li>
-                        </ul>
-                    </li>
-            
+                    
                     <li>
                         <a href="err404.html">Отзывы</a>
                     </li>
     
+                    <li class="dropdown">
+                        <div>
+                            <a class="about-btn" href="#">О нас</a>
+                            <img class="dropdown-image about-btn" src="img/header/dropdown.png">
+                            <ul class="dropdown-menu">
+                        
+                                <li><a href="err404.html">Наши сотрудники</a></li>
+                                <li><a href="err404.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </nav>
+            <nav class="nav-mobile">
+                <ul class="nav-mobile-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="appointment.html">Запись на приём</a></li>
+                    <li><a href="services.html">Услуги и тарифы</a></li>
+                    <li><a href="err404.html">Ветеринарная аптека</a></li>
+                    <li><a href="err404.html">Отзывы</a></li>
+                    <li><a href="err404.html">Наши сотрудники</a></li>
+                    <li><a href="err404.html">Контакты</a></li>
+                </ul>
+            </nav>
+            
         </header>
-
         <main class="container">
             <div class="services">
                 <h1 class="services-title">Цены на услуги в ВетМир</h1>
@@ -98,34 +119,34 @@
                             <div class="services-item-content">
                                 Цены указаны без наркоза и расходных материалов.</div>
                         </div>
+                    </div>
+
+
+
+                    <div class="services-block-2">
                         <div class="services-item">
                             <div class="services-item-title"> Кастрация <br>от ₸7000</div>
                     
-                            <div class="services-item-content">
+                            <div class="services-item-content-2 content-2">
                                 Цены указаны без наркоза и расходных материалов.</div>
                         </div>
 
                         <div class="services-item">
                             <div class="services-item-title"> Стерилизация <br>от ₸14000</div>
                     
-                            <div class="services-item-content">
+                            <div class="services-item-content-2 content-2">
                                 Цены указаны без наркоза и расходных материалов.</div>
                         </div>
-                    </div>
-
-
-
-                    <div class="services-block">
                         <div class="services-item">
                             <div class="services-item-title"> Тест на бешенство ЭКСПРЕСС
                                 <br>от ₸ 145 000</div>
-                            <div class="services-item-content">Результат анализа в течении 1-го месяца</div>
+                            <div class="services-item-content-2 content-2">Результат анализа в течении 1-го месяца</div>
                         </div>
 
                         <div class="services-item">
                             <div class="services-item-title"> Тест на бешенство
                                 <br>от ₸ 95 000</div>
-                            <div class="services-item-content">Результат анализа в течении 2-3 месяцев</div>
+                            <div class="services-item-content-2 content-2">Результат анализа в течении 2-3 месяцев</div>
                             
                         </div>
                     </div>
@@ -136,24 +157,27 @@
         
         <footer class="footer">
             <div class="footer-content container">
-                <div class="footer-column">
+                <div id = "footer-column-1" class="footer-column">
                     <h2 class="footer-title">Меню</h2>
                     <div class="footer-menu">
                         <div class="footer-menu-column">
                             <a href="appointment.html">Запись на приём</a>
                             <a href="index.html">Главная</a>
                             <a href="err404.html">Отзывы</a>
+                            
                         </div>
                         <div class="footer-menu-column">
                             <a href="err404.html">Ветеринарная аптека</a>
                             <a href="services.html">Услуги и тарифы</a>
                             <a href="err404.html">Наши сотрудники</a>
                         </div>
+                        
                     </div>
-                    <span class="footer-info">© ВетМир, 2023–2024</span>
+                    
+                    
                 </div>
     
-                <div class="footer-column">
+                <div id = "footer-column-2" class="footer-column">
                     <h2 class="footer-title">Где мы находимся</h2>
                     <div class="footer-address">
                         <span>Улица Жамбыла Жабаева 156</span>
@@ -162,8 +186,9 @@
                 </div>
                 
     
-                <div class="footer-column">
-                    <div class="contacts"></div>
+                <div id = "footer-column-3" class="footer-column">
+                    <div class="contacts">
+                        
                         <h2 class="footer-title">Социальные сети</h2>
                         <div class="social-networks">
                             <a href="https://web.whatsapp.com/">
@@ -175,17 +200,22 @@
                             <a href="https://telegram.org">
                                 <img src="img/footer/Social Iconstelegram.png" alt="telegram">
                             </a>
+                            
                         </div>
+                    </div>
+                    <div>
                         <h2 class="footer-title">Контакты</h2>
                         <div class="numbers">
                             <span>+ 7 777 123 56 78</span>
                             <span>+ 7 777 987 65 43</span>
                         </div>
-    
-                        
-                    </div>
-                </div>
+                        <span class="footer-info">© ВетМир, 2023–2024</span>
+                    </div>                  
+                                   
+                </div> 
+                
             </div>
+            
         </footer>
         <script src="static/scripts/script.js"></script>
     </body>
