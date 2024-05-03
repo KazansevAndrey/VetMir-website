@@ -1,7 +1,11 @@
 span, li{
     font-size: 1.3rem;
     font-weight: 500;
+    margin: 0.3em;
+    
 }
+
+
 
 .title{
     font-size:3rem;
