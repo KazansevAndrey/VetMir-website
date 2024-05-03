@@ -24,14 +24,18 @@
 
 
 .services-block{
-    margin-bottom:3%; 
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 500px));/* Автоматическое распределение колонок с минимальной шириной 250px */
+    gap: 20px; /* Промежуток между элементами */
+    margin:1.5em;
+    margin-top:0;
+    grid-row: 1;
     
     
 }
-
+.services-item{
+    height: 100%;
+}
 
 .services-title-row{
     display: flex;
@@ -59,10 +63,10 @@
     align-items: center;
     font-size: 29px;
     font-weight: 700;
-    flex:1;
     padding:2%;
     flex-wrap: wrap;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 5em;
 }
 
 
@@ -79,10 +83,15 @@
     flex-wrap:wrap;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    height: 70%;
 
 }
-.services-item-content:hover {
-    background-color: #F8F8FF; /* Изменение цвета при наведении */
-    transform: scale(1.01); 
-  }
 
+
+@media (max-width: 1200px){
+    .services-block{
+        grid-template-columns: repeat(3, minmax(0, 500px));/* Автоматическое распределение колонок с минимальной шириной 250px */
+
+
+    }
+}
