@@ -65,7 +65,7 @@
         justify-content: center;
         align-items: center;
         gap: 10px; /* Добавим промежуток между элементами */
-        margin-bottom:7em;
+        
     }
     .text-container{
         width: 80%;
