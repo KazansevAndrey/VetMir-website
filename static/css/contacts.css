@@ -36,8 +36,9 @@
     padding:1rem;
     width: 50%;
     background-color: #B8CFDC ;
-    opacity: 0.7;
+    opacity: 0.9;
 }
+
 
 .contact-item{
     display: flex;
@@ -74,7 +75,7 @@
 
 .map{
     width: 80%;
-    height: 23rem;
+    height: 30rem;
     display: flex;
     border:0;
     bottom:0;
