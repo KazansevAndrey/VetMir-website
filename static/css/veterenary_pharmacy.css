@@ -1,4 +1,4 @@
-span, li{
+.description span, .description li{
     font-size: 1.3rem;
     font-weight: 500;
     margin: 0.3em;
@@ -17,7 +17,7 @@ span, li{
     display: flex;
     justify-content: space-between;
     gap: 10px; /* Добавим промежуток между элементами */
-    margin-bottom:7em;
+    margin-bottom: 7rem;
 }
 
 .subtitle{
