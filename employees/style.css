@@ -137,6 +137,10 @@ q {
     .employee-img{
         width: 25rem;
     }
+
+    .employee-title{
+        text-align-center;
+    }
     
 }
 
