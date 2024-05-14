@@ -13,7 +13,7 @@ q {
     quotes: '«' '»';
     color: #FFF;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 
     
   }
@@ -46,7 +46,7 @@ q {
 }
 
 .description-container *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Inter, Arial, Helvetica, sans-serif;
     flex-grow: 1;
 
 }
@@ -78,8 +78,8 @@ q {
 }
 
 .desc-text{
-    font-size: 1.1rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 400;
     margin-top:1rem;
     color:#fff;
     
@@ -98,7 +98,7 @@ q {
     background-color: #FFF;
     border-radius: 15px;
     color: #075985;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     font-weight: 600;
     transition: transform 0.3s ease; /* Плавная анимация трансформации */
     text-align: center;
