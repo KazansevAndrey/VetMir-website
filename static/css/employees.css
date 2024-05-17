@@ -9,9 +9,7 @@ a{
     text-decoration: none;
 }
 
-.employees-container{
-    margin-bottom: 7rem;
-}
+
 .title{
     font-size:3rem;
     font-weight: 800;
@@ -35,15 +33,25 @@ a{
     background-color: #D9D9D9;
     padding: 2.5rem !important;
     
+    margin-bottom:7rem;
     
-    
+}
+.swiper-pagination{
+    background-color: #d9d9d9;
+}
+
+.swiper-wrapper{
+    background-color: #d9d9d9;
 }
 .slide-content{
     margin: 0 2.5rem;
+    background-color: #D9D9D9;}
 
+.swiper-button-next, .swiper-button-prev{
+    background: none;
+}   
     
-    
-}
+
 .card{
     width: 20rem;
     height: 37rem !important;
@@ -61,14 +69,20 @@ a{
     flex-direction: column;
     align-items: center;
     padding: 0.625rem 0.875rem;
-    
-    
+    background-color: #FFF;
     
 }
+
+.card-content *{
+    background-color: #FFF;
+}
+
 
 .image-content{
     position: relative;
     row-gap:5px;
+    background-color: #d9d9d9;
+    width: 100%;
     
 }
 
