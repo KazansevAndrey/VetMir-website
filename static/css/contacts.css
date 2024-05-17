@@ -4,9 +4,8 @@
     background-image: url(../../img/contacts/background-dog.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size:auto;
-    height:auto;
-   
+    background-size:cover;
+    height: fit-content;   
 }
 
 
