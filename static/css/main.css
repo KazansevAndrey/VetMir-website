@@ -1,14 +1,18 @@
+html{
+    background-color: #D9D9D9;
+}
 body{
     font-size: 16px;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-color: #E4E5EA; 
+    background-color: #abc2d8; 
 }
 
 main {
     min-height: 100vh;
     
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -21,6 +25,7 @@ main {
     padding: 0;
     font-weight: 900;
     box-sizing: border-box;
+    background-color: #E4E5EA;
     
 }
 
@@ -50,12 +55,13 @@ hr{
 }
 /* Основной контейнер */
 .container{
-    max-width: 1200px;
+    max-width: 1300px;
     width: 100%;
     margin: 0 auto;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding:2rem;
+    padding:3%;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    
     flex: 1 0 auto;
 }
 
@@ -64,12 +70,21 @@ hr{
     display: flex;
     color: #000;
     align-items: center;
-    height: 110px;
+    height: 100px;
+    
+    max-width: 1300px;
+    margin: 0 auto;
+    
+    justify-content: center;
+    
     width: 100%;
     margin: 0 auto;
-    padding-right: 25px;
-    padding-left: 25px;
-    justify-content: center;
+    padding:30px;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    flex: 1 0 auto;
+    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
        
 }
 
@@ -252,8 +267,13 @@ header.open .burger-menu-btn span{
 }
 .footer{
     width: 100%;
+    max-width: 1300px;
     background-color: #D9D9D9;
-    
+    margin: 0 auto;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding:30px;
+    flex: 1 0 auto;
     padding-bottom: 20px;
     flex: 0 0 auto;
     
@@ -394,15 +414,16 @@ header.open .burger-menu-btn span{
 
 
 @media (max-width: 1200px){
+    .header, .container{
+    padding-right: 6%;
+    padding-left: 6%;}
     
-    
-    
-
 }
 
 @media (max-width: 992px){
     .header{
         justify-content: space-between;
+        height: 110px;
     }
     .burger-menu-btn{
         display: block;
