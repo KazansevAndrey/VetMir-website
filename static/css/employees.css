@@ -56,7 +56,7 @@ a{
 .card{
     width: 20rem;
     height: 37rem !important;
-    border-radius: 2.2rem;
+    
     background-color: #FFF;
     z-index: 10000000;
     
