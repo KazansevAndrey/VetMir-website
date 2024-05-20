@@ -201,6 +201,77 @@
                 <img class="our-team-jpg" src="img/our_team/Right photodoctor.png">
             </div>
         </div>
+        <div class="reviews">
+            <div class="reviews-title-flex">
+                <h1 class="reviews-title">
+                    Отзывы о нас
+                </h1>
+    
+                <a class="reviews-button">Все отзывы</a>
+    
+            </div>
+            <div class="reviews-content">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="card swiper-slide">
+                        
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="/img/landing/reviews/1.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="reviews-name">Дмитрий Л.</h2>
+                                <p class="description">"Очень понравилось, как врачи работают с животными. Они не только профессионалы своего дела, но и люди с добрым сердцем. Теперь мы будем обращаться только сюда!"</p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                        
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="/img/landing/reviews/2.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="reviews-name">Марина К</h2>
+                                <p class="description">"Отличная клиника с дружелюбным персоналом. Нашему щенку сделали все необходимые прививки и дали полезные советы по уходу. Мы остались очень довольны!"</p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                        
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="/img/landing/reviews/3.jpeg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="reviews-name">Алексей Н</h2>
+                                <p class="description">"Впервые побывали в этой клинике и остались под большим впечатлением. Отличное оборудование, внимательный персонал и уютная атмосфера. Теперь мы - ваши постоянные клиенты!"</p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                        
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="/img/landing/reviews/4.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="reviews-name">Адина М</h2>
+                                <p class="description">"Очень рекомендую эту ветеринарную клинику! Врачи здесь действительно любят животных и делают все возможное, чтобы помочь им. Наш котик быстро пошел на поправку благодаря вашему лечению!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                
+                <img class="reviews-img" src="img/landing/reviews-dog.jpeg" alt="reviews-dog">
+
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
@@ -265,6 +336,16 @@
         </div>
         
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+          },
+          spaceBetween: 50,
+        });
+    </script>
     <script src="static/scripts/script.js"></script>
 </body>
 </html>
