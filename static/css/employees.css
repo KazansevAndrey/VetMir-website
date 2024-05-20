@@ -16,6 +16,7 @@ a{
     margin-bottom: 3rem;
 }
 
+
 .employees-description{
     display: flex;
     flex-direction: column;
@@ -118,10 +119,9 @@ a{
 }
 .card-image{
     position: relative;
-    height: 15rem;
-    width: 15rem;
-    border-radius:50%;
-    
+    max-height: 15rem;
+    max-width: 15rem;
+    border-radius:50%;   
 }
 
 .card-image .card-img{
@@ -186,4 +186,5 @@ a{
     
 
 }
+
 
