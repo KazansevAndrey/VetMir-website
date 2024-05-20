@@ -1,0 +1,210 @@
+.reviews-title{
+    font-size:3rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    background: none;
+}
+.reviews-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 7rem;
+}
+
+.reviews-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+    justify-content: center;
+}
+
+.reviews-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:2rem;
+    gap:1rem;
+    background-color: rgb(184, 207, 220);
+    border-radius: 30px;
+    transition: transform 0.2s; /* добавляем плавный переход */
+    
+}
+.reviews-item:hover{
+    transform: scale(1.05);
+}
+
+.reviews-item-text{
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+}
+
+.reviews-item-title{
+    font-weight: 500;
+    font-size: 2rem;
+    padding-bottom:1rem;
+    background-color: inherit;
+
+}
+
+.reviews-item-desc{
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding-bottom:1rem;
+    background-color: inherit;
+
+}
+
+.reviews-item-link{
+    font-weight: 500;
+    transform: skew(-15deg);
+    background-color: inherit;
+
+}
+
+.reviews-item-img{
+    display: flex;
+    background-color: inherit;
+    padding-bottom: 0.5rem;
+    
+    
+
+
+}
+.reviews-item-img img{
+    width: 8rem;
+    height: 10rem;
+    border-radius: 30px;
+    background-color: inherit;
+    object-fit: cover;
+    object-position: center;
+}
+
+.reviews-button{
+    display: inline-block;
+    text-align: center;
+    align-self: center;
+    font-weight: 600;
+    margin-top: 2rem;
+    width: 40%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #007bff; /* Цвет фона кнопки */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета фона при наведении */
+}
+
+.reviews-button:hover {
+    background-color: #0056b3; /* Цвет фона кнопки при наведении */
+}
+
+.subtitle{
+    font-size: 2.3rem;
+    margin-top:4rem;
+    margin-bottom: 1rem;
+}
+
+.statistic-container{
+    display: flex;
+}
+.statistic-text{
+    width: 50%;
+    padding: 1rem;
+    
+}
+
+.statistic-subtitle{
+    font-size: 1.6rem;
+    margin:1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.statistic-desc{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.chartContainer {
+    width: 50%;   /* Задается ширина, составляющая 80% */
+    height: auto; /* Высота равняется 50% от высоты видимой части окна */
+  }
+
+.pieChart{
+    margin-top:3rem;
+   
+    
+}
+
+@media (max-width: 992px) { 
+    .reviews-button{
+        width: 50%;
+    }
+    
+    .statistic-container{
+        flex-direction: column;}
+    
+    .statistic-text{
+        width: 80%;
+    }
+
+    .statistic-subtitle{
+        text-align: left;
+    }
+
+    .chartContainer {
+        width: 100%;   /* Задается ширина, составляющая 80% */
+        height: auto; /* Высота равняется 50% от высоты видимой части окна */
+      }
+    }
+   
+
+
+@media (max-width: 769px) {
+    html{
+        font-size: 14px;
+    }
+    .reviews-grid{
+
+        grid-template-columns: 35rem;
+        justify-content: center;
+    }
+
+    .reviews-title{
+        text-align: center;
+    }
+
+    .reviews-button{
+        width: 60%;
+    }
+
+    .statistic-text{
+        width: 90%;
+    }
+    
+    
+}
+
+
+@media (max-width: 480px) {
+    html{
+        font-size: 11px;
+    }
+
+    .reviews-grid{
+
+        grid-template-columns: 30rem;
+        justify-content: center;
+    }
+
+    .reviews-button{
+        width: 70%;
+    }
+
+    .statistic-text{
+        width: 100%;
+    }
+}
