@@ -618,7 +618,7 @@
     text-align: center;
     align-self: center;
     margin-left: 1.3rem;
-    width: auto;
+    width: 40%;
 }
 
 @media (max-width: 1200px){
