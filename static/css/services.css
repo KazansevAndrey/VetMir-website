@@ -1,7 +1,6 @@
 
 
 
-
 .services-title{
     font-size: 3rem;
     color: #021E20;
@@ -111,7 +110,7 @@
     background-color: #075985;
     border-radius: 15px;
     color: #fff;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     text-decoration: none;
     width: 30%;
@@ -120,7 +119,10 @@
 
 
 @media (max-width: 992px) {
-    
+    .services-button {
+
+        width: 40%;
+        }
 }
 
 @media (max-width: 769px) {
@@ -129,6 +131,10 @@
     }
     .services-title{
     text-align: center;}
+    .services-button {
+
+        width: 60%;
+        }
 
 }
 
@@ -153,7 +159,12 @@
         
         grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
 }
+    .services-button {
+
+    width: 80%;
+    }
 
 }
+
 
 
