@@ -146,14 +146,14 @@
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
     background-color: rgba(0,0,0,0.4);
 }
 
 .popup-content {
     background-color: #fff;
     margin: 15% auto;
-    margin-top: 20%;
+   
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
@@ -288,7 +288,12 @@ button[type="submit"]:hover {
         width: 100%;
         
         }
-    
+
+    .popup-content {
+       
+        margin-top: 25%;
+        
+    }
     
 }
 
