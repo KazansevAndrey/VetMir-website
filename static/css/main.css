@@ -116,6 +116,16 @@ menu li li a{
     margin: 0;
     padding: 0;
 }
+
+.nav-desktop ul li a{
+    padding: 0.2rem;
+    transition:  0.5s ease;
+}
+.nav-desktop ul li a:hover{
+    background-color: #B8CFDC;
+    
+    border-radius: 8px;
+}
  
 .nav-desktop-links li a {
     color: white;
