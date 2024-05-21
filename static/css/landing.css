@@ -621,6 +621,10 @@
     width: auto;
 }
 
+.article-button:hover{
+    background-color: #2A7096;
+}
+
 @media (max-width: 1200px){
     .reviews{
         margin-left: calc(-50vw + 50%);
