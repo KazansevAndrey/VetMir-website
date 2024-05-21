@@ -134,6 +134,7 @@ q {
     }
     .employee-img{
         width: 30rem;
+        align-self:center;
     }
 }
 
