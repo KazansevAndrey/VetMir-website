@@ -136,6 +136,9 @@ q {
         width: 30rem;
         align-self:center;
     }
+    .employee-title{
+        text-align:center;
+    }
 }
 
 
