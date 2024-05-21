@@ -1,13 +1,12 @@
 
 
 
+
 .services-title{
     font-size: 3rem;
     color: #021E20;
     font-weight: 800;
     margin-bottom:1em;
-    
-    
 }
 
 .services-text{
@@ -102,6 +101,22 @@
     
 }
 
+.services-button:hover {
+    background-color: #2A7096;
+  }
+  .services-button {
+    padding: 1.3rem;
+    margin-top: 3rem;
+    align-self: center;
+    background-color: #075985;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    width: 30%;
+    flex-shrink: 0;
+    text-align: center;}
 
 
 @media (max-width: 992px) {
@@ -140,4 +155,5 @@
 }
 
 }
+
 
