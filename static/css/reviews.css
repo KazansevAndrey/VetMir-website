@@ -86,9 +86,9 @@
     align-self: center;
     font-weight: 600;
     margin-top: 2rem;
-    width: 20%;
-    padding: 1.1rem;
-    font-size: 1.4rem;
+    width: 40%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
     color: #fff;
     background-color: #007bff; /* Цвет фона кнопки */
     border: none;
@@ -134,9 +134,102 @@
   }
 
 .pieChart{
-    margin-top:3rem;
-   
+    margin-top:3rem;  
+}
+
+.popup {
+    display: none;
     
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    margin-top: 20%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    position: relative;
+}
+
+.form-title{
+    background-color: inherit;
+    font-size: 1.5rem;
+
+}
+.close-btn {
+    color: #aaa;
+    background-color: inherit;
+    float: right;
+    font-size: 28px;
+    margin-top: -3% ;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    
+    flex-direction: column;
+    background-color: inherit;
+
+}
+
+label {
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    background-color: inherit;
+
+}
+
+input, textarea {
+    margin-top: 0.3125rem;
+    padding: 0.625rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: inherit;
+}
+
+textarea{
+    height: 10rem;
+}
+
+button[type="submit"] {
+    margin-top: 1.2rem;
+    padding: 0.635rem 1.25rem;
+    font-size: 1.3rem;
+    background-color: #318CE7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+
+}
+
+button[type="submit"]:hover {
+    background-color: #075985;
 }
 
 @media (max-width: 992px) { 
@@ -159,6 +252,11 @@
         width: 100%;   /* Задается ширина, составляющая 80% */
         height: auto; /* Высота равняется 50% от высоты видимой части окна */
       }
+    .popup-content {
+    
+    width: 90%;
+    
+    }
     }
    
 
@@ -184,6 +282,12 @@
     .statistic-text{
         width: 90%;
     }
+
+    .popup-content {
+    
+        width: 100%;
+        
+        }
     
     
 }
