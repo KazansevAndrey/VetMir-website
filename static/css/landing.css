@@ -618,6 +618,7 @@
     align-self: center;
     margin-left: 1.3rem;
     width: auto;
+    white-space:nowrap;
 }
 
 .article-button:hover{
